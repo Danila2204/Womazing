@@ -1,4 +1,8 @@
 // === variables ===
+$radio-color-1: rgb(146, 120, 118);
+$radio-color-2: rgb(212, 212, 212);
+$radio-color-3: rgb(253, 150, 150);
+$radio-color-4: rgb(253, 199, 150);
 $brand-color: #6e9c9f;
 $brand-color2: rgb(80, 148, 152);
 $gradient-brand-color: rgba(110, 156, 159, .68);
@@ -170,6 +174,57 @@ body {
         &:hover {
             cursor: pointer;
         }
+    }
+}
+
+.colors__radio-buttons {
+    display: flex;
+}
+
+.colors__radio-button {
+    display: none;
+    
+    &_fake {
+        width: 41px;
+        height: 41px;
+        border-radius: 100px;
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 41px;
+            height: 41px;
+            border-radius: 100px;
+            border: 1px solid #000;
+            opacity: 0;
+        }
+
+        &-1 {
+            margin: 0 14px 0 0;
+            background-color: $radio-color-1;
+        }
+        
+        &-2 {
+            margin: 0 14px 0 0;
+            background-color: $radio-color-2;
+        }
+        
+        &-3 {
+            margin: 0 14px 0 0;
+            background-color: $radio-color-3;
+        }
+        
+        &-4 {
+            background-color: $radio-color-4;
+        }
+    }
+
+    &:checked + &_fake::before {
+        opacity: 1;
     }
 }
 
