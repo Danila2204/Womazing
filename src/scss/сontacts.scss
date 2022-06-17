@@ -1,0 +1,214 @@
+
+$brand-color: #6e9c9f;
+$gradient-brand-color: rgba(110, 156, 159, .68);
+$background-header-color: #F1EADC;
+$button-color: rgb(241, 246, 246);
+$price_color: rgb(153, 142, 120);
+$old_price_color: rgb(156, 156, 156);
+$quantity-color: rgb(144, 144, 144);
+$map-color: #ddd;
+$plaxeholder-color: rgb(134, 134, 134);
+$footer-color: #f1eadc;
+// === / variables ===
+// === imports ===
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+// === / imports ===
+// === mxixins ===
+@mixin Raleway-Regular {    
+    font-family:"Raleway", sans-serif;
+    font-weight: 400;
+}
+
+@mixin Raleway-Medium {    
+    font-family:"Raleway", sans-serif;
+    font-weight: 500;
+
+}
+@mixin Raleway-Bold {    
+    font-family:"Raleway", sans-serif;
+    font-weight: 700;
+}
+// === / mxixins ===
+// === normalize ===
+.header {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+// === / normalize ===
+// === contacts ===
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.title {
+    @include Raleway-Medium();
+
+    margin: 0;
+    font-size: 55px;
+}
+
+.nav {
+    @include Raleway-Medium();
+
+    height: 24px;
+    margin: 0 0 214px;
+    font-size: 17px;
+
+    &__present {
+        color: $quantity-color;
+    }
+}
+
+.map {
+    max-width: 1109px;
+    height: 476px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $map-color;
+
+    &__text {
+        @include Raleway-Medium();
+
+        font-size: 17px;
+    }
+}
+
+.dates {
+    display: flex;
+    margin: 130px 0;
+
+    &__name {
+        @include Raleway-Medium();
+
+        font-size: 17px;
+    }
+    
+    &__value {
+        @include Raleway-Medium();
+    
+        font-size: 20px;
+    }
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin: 0 105px 0 0;
+    }
+}
+
+.form {
+    @include Raleway-Medium();
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    &__title {
+        @include Raleway-Medium();
+
+        font-size: 25px;
+    }
+
+    &__name {
+        height: 40px;
+        width: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 17px;
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &::placeholder {
+            color: $plaxeholder-color;
+        }
+    }
+    
+    &__e-mail {
+        height: 40px;
+        width: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 17px;
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &::placeholder {
+            color: $plaxeholder-color;
+        }
+    }
+    
+    &__tel {
+        height: 40px;
+        width: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 17px;
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &::placeholder {
+            color: $plaxeholder-color;
+        }
+    }
+    
+    &__message {
+        height: 134px;
+        width: 443px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 17px;
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &::placeholder {
+            color: $plaxeholder-color;
+        }
+    }
+
+    &__button {
+        @include Raleway-Regular();
+
+        width: 189px;
+        height: 68px;
+        margin: 35px 0 0;
+        border: none;
+        font-size: 17px;
+        background-color: $brand-color;
+        color: #fff;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.message {
+    @include Raleway-Medium();
+
+    width: 437px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 62px 0 0;
+    font-size: 17px;
+    background-color: $footer-color;
+}
+// === / contacts ===

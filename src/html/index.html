@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include("../assembling/head.html", {
+    "title": "Главная",
+    "css": "./css/style.css"
+})
+<body>
+    <!-- header -->
+    <header class="header">
+        <img class="header__background" src="./imports/img/image-header_background.svg" alt="">
+        <div class="container container_header">
+            @@include("../assembling/header.html", {})
+    <div class="header__content">
+        <div class="header__main">
+            <p class="title title_header">
+                Новые поступления<br>
+                в этом сезоне
+            </p>
+            <p class="description description_description">
+                Утонченные сочетания и бархатные<br>
+                оттенки - вот то, что вы искали в этом<br>
+                сезоне. Время исследовать.
+            </p>
+            <button class="header__button">
+                <div class="button-arrow">
+                    <img src="./imports/img/arow_down.svg" alt="">
+                </div>
+                <div class="button__main">
+                    <a href="./store.html" class="link link_button">Открыть магазин</a>
+                </div>
+            </button>
+            <div class="condition">
+                <img class="condition__img" src="./imports/img/condition_false.svg" alt="">
+                <img class="condition__img" src="./imports/img/condition.svg" alt="">
+                <img class="condition__img" src="./imports/img/condition_false.svg" alt="">
+            </div>
+        </div>
+        <img class="gallery__img_1" src="./imports/img/image-2.png" alt="">
+        <img class="gallery__img_2" src="./imports/img/image-3.png" alt="">
+        <img class="gallery__img_3" src="./imports/img/image-4.png" alt="">
+    </div>
+</div>
+</header>
+<!-- / header -->
+    <!-- new collection -->
+    <section class="new-collection">
+        <div class="container container_collection">
+            <p class="title title_collection">Новая коллекция</p>
+            <div class="collection">
+                <div class="collection__product">
+                    <a href="./usa.html"><div class="collection_img collection_img_1">
+                        <div class="collection_img-overlay">
+                            <div class="overlay-frontground"></div>
+                        </div>
+                    </div></a>
+                    <p class="product__name">Футболка USA</p>
+                    <div class="prices">
+                        <p class="product__price product__price_old">$229</p>
+                        <p class="product__price">$129</p>
+                    </div>
+                </div>
+                <div class="collection__product">
+                    <a href="./glow.html">
+                        <div class="collection_img collection_img_2">
+                            <div class="collection_img-overlay">
+                                <div class="overlay-frontground"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="product__name">Купальник Glow</p>
+                    <p class="product__price">$129</p>
+                </div>
+                <div class="collection__product">
+                    <a href="./sweet shot.html">
+                        <div class="collection_img collection_img_3">
+                            <div class="collection_img-overlay">
+                                <div class="overlay-frontground"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="product__name">Свитшот Sweet Shot</p>
+                    <p class="product__price">$129</p>
+                </div>
+            </div>
+            <a class="link link_button" href="store.html"><button class="new-collection__button">Открыть магазин</button></a>
+        </div>
+    </section>
+    <!-- / new collection -->
+    <!-- important -->
+    <section class="important">
+        <div class="container">
+            <p class="title title_important">Что для нас важно</p>
+            <div class="parametrs">
+                <div class="parametr">
+                    <img src="./imports/img/icon-3.svg" alt="" class="parametr__img">
+                    <p class="subtitle subtitle_important">Качество</p>
+                    <p class="parametr__description">
+                        Наши профессионалы работают на<br>
+                        лучшем оборудовании для пошива<br>
+                        одежды беспрецедентного<br>
+                        качества
+                    </p>
+                </div>
+                <div class="parametr">
+                    <img src="./imports/img/icon-4.svg" alt="" class="parametr__img">
+                    <p class="subtitle subtitle_important">Скорость</p>
+                    <p class="parametr__description">
+                        Благодаря отлаженной системе в<br>
+                        Womazing мы можем отшивать до<br>
+                        20-ти единиц продукции в наших<br>
+                        собственных цехах
+                    </p>
+                </div>
+                <div class="parametr">
+                    <img src="./imports/img/icon-5.svg" alt="" class="parametr__img">
+                    <p class="subtitle subtitle_important">Ответственность</p>
+                    <p class="parametr__description">
+                        Мы заботимся о людях и планете.<br>
+                        Безотходное производство и комфортные условия труда - все<br>
+                        это Womazing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / important -->
+    <!-- dream team -->
+    <section class="dream-team">
+        <div class="container container_dream-team">
+            <p class="title title_dream-team">Команда мечты Womazing</p>
+            <div class="dream-team__content">
+                <div class="slider">
+                    <img class="slide__button slide__button_left" src="./imports/img/arrow_left_disabled.svg" alt="">
+                    <div class="slide">        
+                        <div class="condition condition_slide">
+                            <img src="./imports/img/slide-condition_false.svg" alt="">
+                            <img src="./imports/img/slide-condition.svg" alt="">
+                            <img src="./imports/img/slide-condition_false.svg" alt="">
+                        </div>
+                    </div>
+                    <img class="slide__button slide__button_right" src="./imports/img/arrow_right.svg" alt="">
+                </div>
+                <div class="description description_dream-team">
+                    <p class="subtitle subtitle_dream-team">Для каждой</p>
+                    <p class="description__text">
+                        Каждая девушка уникальна.<br>
+                        Однако, мы схожи<br>
+                        в миллионе мелочей.<br> 
+                        <br>
+                        Womazing ищет эти мелочи и<br>
+                        создает прекрасные вещи,<br>
+                        которые выгодно подчеркивают достоинства каждой девушки.
+                    </p>
+                    <a href="about brand.html" class="link link_dream-team">Подробнее о бренде</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / dream team -->
+    @@include("../assembling/footer.html", {})
+    <!-- script -->
+    <script src="./scripts/swim header.js"></script>
+    <script src="./scripts/links animation.js"></script>
+    <!-- / scriptcc -->
+</body>
+</html>

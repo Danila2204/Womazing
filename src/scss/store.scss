@@ -1,0 +1,176 @@
+// === variables ===
+$brand-color: #6e9c9f;
+$gradient-brand-color: rgba(110, 156, 159, .68);
+$background-header-color: #F1EADC;
+$button-color: rgb(241, 246, 246);
+$price_color: rgb(153, 142, 120);
+$quntity-color: rgb(128, 128, 128);
+$old_price_color: rgb(156, 156, 156);
+$footer-color: #f1eadc;
+// === / variables ===
+// === imports ===
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+// === / imports ===
+// === mxixins ===
+@mixin Raleway-Regular {    
+    font-family:"Raleway", sans-serif;
+    font-weight: 400;
+}
+
+@mixin Raleway-Medium {    
+    font-family:"Raleway", sans-serif;
+    font-weight: 500;
+
+}
+@mixin Raleway-Bold {    
+    font-family:"Raleway", sans-serif;
+    font-weight: 700;
+}
+// === / mxixins ===
+// === normalize ===
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0;
+}
+// === / normalize ===
+// === store ===
+.store {
+    display: flex;
+    justify-content: center;
+    margin: 142px 0 0;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__kinds {
+        display: flex;
+    }
+}
+
+.kinds__button {
+    @include Raleway-Medium();
+
+    transition: .5s;
+    animation: ease;
+    padding: 19px 65px;
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #000;
+        color: #fff;
+        border: none;
+    }
+
+    &:not(:last-child) {
+        margin: 0 10px 0 0;
+    }
+}
+
+.title {
+    @include Raleway-Medium();
+
+    margin: 0;
+    font-size: 55px;
+}
+
+.nav {
+    @include Raleway-Medium();
+    
+    font-size: 17px;
+    &__present {
+        color: $quntity-color;
+    }
+}
+
+.quantity {
+    @include Raleway-Medium();
+
+    font-size: 17px;
+    color: $quntity-color;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin: 0 30px 0 0;
+    }
+
+    &__name {
+        @include Raleway-Medium();
+
+        margin: 24px 0 7px;
+        font-size: 20px;
+    }
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+        display: flex;
+    }
+}
+
+.price {
+    @include Raleway-Medium();
+
+    margin: 0 0 50px;
+    font-size: 15px;
+    color: $price_color;
+    
+    &_old {
+        margin: 0 10px 0 0;
+        text-decoration: line-through;
+        color: $old_price_color;
+    }
+}
+
+.prices {
+    display: flex;
+}
+
+.collection {
+    display: flex;
+    
+    &_img {
+        width: 350px;
+        height: 478px;
+        transition: .5s;
+        margin: 0;
+        
+        &_1 {
+            background-image: url(../imports/img/image-1.png);
+        }
+        
+        &_2 {
+            background-image: url(../imports/img/image-5.png);
+        }
+        
+        &_3 {
+            background-image: url(../imports/img/image-6.png);
+        }
+
+        &-overlay {
+            transition: .5s;
+            animation: ease;
+        }
+    }
+}
+// === / store ===

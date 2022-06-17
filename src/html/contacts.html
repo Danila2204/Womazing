@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("../assembling/head.html", {
+        "title": "Контакты",
+        "css": "./css/сontacts.css"
+    })
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                @@include("../assembling/header.html", {})
+            </div>
+        </header>
+        <!-- / header -->
+        <!-- contacts -->
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts_info">
+                    <p class="title">Контакты</p>
+                    <div class="nav">
+                        <p class="nav__past">Главная - <span class="nav__present">Контакты</span></p>
+                    </div>
+                </div>
+                <div class="map">
+                    <p class="map__text">Карта с любой точкой</p>
+                </div>
+                <div class="dates">
+                    <div class="date date_tel">
+                        <p class="dates__name">Телефон</p>
+                        <p class="dates__value">+7 (495) 823-54-12</p>
+                    </div>
+                    <div class="date date_e-mail">
+                        <p class="dates__name">E-mail</p>
+                        <p class="dates__value">info@sitename.com</p>
+                    </div>
+                    <div class="date date_addres">
+                        <p class="dates__name">Адрес</p>
+                        <p class="dates__value">г. Москва, 3-я улица Строителей, 25</p>
+                    </div>
+                </div>
+                <form class="form" action="#">
+                    <p class="form__title">Напишите нам</p>
+                    <input class="form__name" type="text" placeholder="Имя">
+                    <input class="form__e-mail" type="email" placeholder="E-mail">
+                    <input class="form__tel" type="tel" placeholder="Телефон">
+                    <input class="form__message" type="text" placeholder="Сообщение">
+                    <input class="form__button" type="submit" value="Отправить">
+                </form>
+                <div class="message">
+                    <p class="message__text">Сообщение успешно отправлено</p>
+                </div>
+            </div>
+        </section>
+        <!-- / contacts -->
+        @@include("../assembling/footer.html", {})
+        <!-- script -->
+        <script src="../scripts/swim header.js"></script>
+        <script src="../scripts/link.js"></script>
+        <!-- / scriptcc -->
+    </body>
+</html>

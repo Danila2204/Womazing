@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("../assembling/head.html", {
+        "title": "О бренде",
+        "css": "./css/about brand.css"
+    })
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                @@include("../assembling/header.html", {})
+            </div>
+        </header>
+        <!-- / header -->
+        <!-- about brand -->
+        <section class="about-brand">
+            <div class="container">
+                <div class="about-brand__info">
+                    <p class="title">О бренде</p>
+                    <div class="nav">
+                        <p class="nav__past">Главная - <span class="nav__present">О бренде</span></p>
+                    </div>
+                </div>
+                <div class="about-brand__history">
+                    <div class="idea">
+                        <img class="idea__img" src="./imports/img/image-7.png" alt="">
+                        <div class="idea__text">
+                            <p class="idea__title">Идея и женщина</p>
+                            <p class="idea__description">
+                                Womazing была основана в 2010-ом и стала одной из самых<br>
+                                успешных компаний нашей страны. Как и многие итальянские<br>
+                                фирмы, Womazing остаётся семейной компанией, хотя ни один<br>
+                                из членов семьи не является модельером.<br>
+                                <br>
+                                Мы действуем по успешной формуле, прибегая к услугам<br>
+                                известных модельеров для создания своих коллекций. Этот<br>
+                                метод был описан критиком моды Колином Макдауэллом как<br>
+                                форма дизайнерского со-творчества, характерная для ряда<br>
+                                итальянских prêt-a-porter компаний. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="magic">
+                        <img class="magic__img" src="./imports/img/image-8.png" alt="">
+                        <div class="magic__text">
+                            <p class="magic__title">Магия в деталях</p>
+                            <p class="magic__description">
+                                Первый магазин Womazing был открыт в маленьком городке<br>
+                                на севере страны в 2010-ом году. Первая коллекция состояла<br>
+                                из двух пальто и костюма, которые были копиями парижских<br>
+                                моделей.<br>
+                                <br>
+                                Несмотря на то, что по образованию основательница была <br>
+                                адвокатом, ее семья всегда была тесно связана с шитьём<br>
+                                (прабабушка основательницы шила одежду для женщин, а<br>
+                                мать основала профессиональную школу кроя и шитья).<br>
+                                Стремление производить одежду для масс несло в себе<br>
+                                большие перспективы, особенно в то время, когда высокая<br>
+                                мода по-прежнему доминировала, а рынка качественного<br>
+                                prêt-a-porter попросту не существовало.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="./store.html"><button class="about-brand__button">Перейти в магазин</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- / about brand -->
+        @@include("../assembling/footer.html", {})
+        <!-- script -->
+        <script src="../scripts/swim header.js"></script>
+        <script src="../scripts/link.js"></script>
+        <!-- / scriptcc -->
+    </body>
+</html>
