@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+.header {
+  margin: 0 0 142px;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .about-brand {
   display: flex;
   justify-content: center;
@@ -16,6 +28,8 @@
   font-weight: 400;
   width: 260px;
   height: 68px;
+  transition: 0.5s;
+  animation: ease;
   margin: 130px 0 0;
   font-size: 17px;
   border: none;
@@ -24,6 +38,7 @@
 }
 .about-brand__button:hover {
   cursor: pointer;
+  background-color: rgb(80, 148, 152);
 }
 
 .title {
@@ -33,16 +48,16 @@
   margin: 0;
 }
 
-.nav {
+.nav-page {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  height: 20px;
+  height: 120px;
   font-size: 17px;
 }
-.nav__past {
+.nav-page__past {
   margin: 0;
 }
-.nav__present {
+.nav-page__present {
   color: rgb(144, 144, 144);
 }
 

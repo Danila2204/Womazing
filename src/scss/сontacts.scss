@@ -1,5 +1,6 @@
-
+// === variables ===
 $brand-color: #6e9c9f;
+$brand-color2: rgb(80, 148, 152);
 $gradient-brand-color: rgba(110, 156, 159, .68);
 $background-header-color: #F1EADC;
 $button-color: rgb(241, 246, 246);
@@ -7,7 +8,7 @@ $price_color: rgb(153, 142, 120);
 $old_price_color: rgb(156, 156, 156);
 $quantity-color: rgb(144, 144, 144);
 $map-color: #ddd;
-$plaxeholder-color: rgb(134, 134, 134);
+$placeholder-color: rgb(134, 134, 134);
 $footer-color: #f1eadc;
 // === / variables ===
 // === imports ===
@@ -31,7 +32,7 @@ $footer-color: #f1eadc;
 // === / mxixins ===
 // === normalize ===
 .header {
-    margin: 0;
+    margin: 0 0 142px;
 }
 
 body {
@@ -56,10 +57,10 @@ body {
     font-size: 55px;
 }
 
-.nav {
+.nav-page {
     @include Raleway-Medium();
 
-    height: 24px;
+    height: 120px;
     margin: 0 0 214px;
     font-size: 17px;
 
@@ -133,7 +134,7 @@ body {
         border-bottom: 1px solid #000;
 
         &::placeholder {
-            color: $plaxeholder-color;
+            color: $placeholder-color;
         }
     }
     
@@ -148,7 +149,7 @@ body {
         border-bottom: 1px solid #000;
 
         &::placeholder {
-            color: $plaxeholder-color;
+            color: $placeholder-color;
         }
     }
     
@@ -163,7 +164,7 @@ body {
         border-bottom: 1px solid #000;
 
         &::placeholder {
-            color: $plaxeholder-color;
+            color: $placeholder-color;
         }
     }
     
@@ -176,9 +177,12 @@ body {
         font-size: 17px;
         border: none;
         border-bottom: 1px solid #000;
-
+        
         &::placeholder {
-            color: $plaxeholder-color;
+            color: $placeholder-color;
+
+        } &:focus {
+            border: 1px solid #f00;
         }
     }
 
@@ -187,6 +191,8 @@ body {
 
         width: 189px;
         height: 68px;
+        transition: .5s;
+        animation: ease;
         margin: 35px 0 0;
         border: none;
         font-size: 17px;
@@ -195,6 +201,7 @@ body {
         
         &:hover {
             cursor: pointer;
+            background-color: $brand-color2;
         }
     }
 }

@@ -53,13 +53,14 @@ body {
 .main-product {
     display: flex;
     justify-content: center;
+    margin: 62px 0 0;
 }
 
 .title {
     margin: 0 0 26px;
 }
 
-.nav {
+.nav-page {
     @include Raleway-Medium();
 
     font-size: 17px;
@@ -165,6 +166,8 @@ body {
 
         width: 268px;
         height: 68px;
+        transition: .5s;
+        animation: ease;
         margin: 0 0 0 11px;
         font-size: 17px;
         border: none;
@@ -173,6 +176,7 @@ body {
 
         &:hover {
             cursor: pointer;
+            background-color: $brand-color2;
         }
     }
 }

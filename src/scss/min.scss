@@ -67,7 +67,6 @@ body {
 .nav {
     @include Raleway-Regular();
 
-    max-width: 1106px;
     display: flex;
     justify-content: space-between;
     height: 120px;
@@ -86,7 +85,7 @@ body {
 // === / global ===
 // === header ===
 .header {
-    width: 100%;
+    width: 1600px;
     display: flex;
     justify-content: center;
     margin: 0 0 250px;
@@ -108,6 +107,7 @@ body {
         color: #fff;
         
         &:hover {
+            cursor: pointer;
             background-color: $brand-color2;
         }
     }
@@ -125,12 +125,18 @@ body {
 }
 
 .nav_header {
+    width: 1600px;
     height: 120px;
     position: sticky;
     top: 0;
     margin: 0;
+    padding: 0 246px;
     z-index: 2;
     background-color: #fff;
+}
+
+.container_header {
+    width: 100%;
 }
 
 .link_header {
@@ -269,6 +275,7 @@ body {
 }
 
 .nav_footer {
+    min-width: 1106px;
     margin: 0;
 }
 

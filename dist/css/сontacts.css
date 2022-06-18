@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 .header {
-  margin: 0;
+  margin: 0 0 142px;
 }
 
 body {
@@ -24,14 +24,14 @@ body {
   font-size: 55px;
 }
 
-.nav {
+.nav-page {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  height: 24px;
+  height: 120px;
   margin: 0 0 214px;
   font-size: 17px;
 }
-.nav__present {
+.nav-page__present {
   color: rgb(144, 144, 144);
 }
 
@@ -136,11 +136,16 @@ body {
 .form__message::placeholder {
   color: rgb(134, 134, 134);
 }
+.form__message:focus {
+  border: 1px solid #f00;
+}
 .form__button {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   width: 189px;
   height: 68px;
+  transition: 0.5s;
+  animation: ease;
   margin: 35px 0 0;
   border: none;
   font-size: 17px;
@@ -149,6 +154,7 @@ body {
 }
 .form__button:hover {
   cursor: pointer;
+  background-color: rgb(80, 148, 152);
 }
 
 .message {

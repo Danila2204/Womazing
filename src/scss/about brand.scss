@@ -1,5 +1,6 @@
 // === variables ===
 $brand-color: #6e9c9f;
+$brand-color2: rgb(80, 148, 152);
 $gradient-brand-color: rgba(110, 156, 159, .68);
 $background-header-color: #F1EADC;
 $button-color: rgb(241, 246, 246);
@@ -27,6 +28,19 @@ $footer-color: #f1eadc;
     font-weight: 700;
 }
 // === / mxixins ===
+// === normalize ===
+.header {
+    margin: 0 0 142px;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+// === / normalize ===
 // === about brand ===
 .about-brand {
     display: flex;
@@ -47,6 +61,8 @@ $footer-color: #f1eadc;
 
         width: 260px;
         height: 68px;
+        transition: .5s;
+        animation: ease;
         margin: 130px 0 0;
         font-size: 17px;
         border: none;
@@ -55,6 +71,7 @@ $footer-color: #f1eadc;
 
         &:hover {
             cursor: pointer;
+            background-color: $brand-color2;
         }
     }
 }
@@ -67,10 +84,10 @@ $footer-color: #f1eadc;
     margin: 0;
 }
 
-.nav {
+.nav-page {
     @include Raleway-Medium();
 
-    height: 20px;
+    height: 120px;
     font-size: 17px;
 
     &__past {
