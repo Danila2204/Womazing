@@ -171,22 +171,34 @@ body {
 }
 
 .sizes__button {
+  display: none;
+}
+.sizes__button_fake {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   width: 41px;
   height: 41px;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: ease;
+  margin: 0 14px 0 0;
   border: 1px solid #000;
+  font-size: 17px;
   background-color: #fff;
   color: #000;
 }
-.sizes__button:hover {
+.sizes__button_fake:hover {
   cursor: pointer;
+}
+.sizes__button_fake-last {
+  margin: 0;
+}
+.sizes__button:checked + .sizes__button_fake {
   border: none;
   background-color: #000;
   color: #fff;
-}
-.sizes__button:not(:last-child) {
-  margin: 0 14px 0 0;
 }
 
 .clue {

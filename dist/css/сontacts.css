@@ -126,14 +126,13 @@ body {
 .form__message {
   height: 134px;
   width: 443px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  vertical-align: top;
   font-size: 17px;
   border: none;
   border-bottom: 1px solid #000;
 }
 .form__message::placeholder {
+  vertical-align: top;
   color: rgb(134, 134, 134);
 }
 .form__message:focus {
