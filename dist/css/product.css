@@ -32,6 +32,8 @@ body {
 }
 .nav-page__past {
   margin: 0;
+  text-decoration: none;
+  color: #000;
 }
 .nav-page__present {
   color: rgb(144, 144, 144);
