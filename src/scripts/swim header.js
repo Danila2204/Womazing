@@ -7,5 +7,6 @@ window.addEventListener("scroll", () => {
 
     } else if (window.pageYOffset <= 4) {
         header.style.boxShadow = "";
+        header.style.backgroundColor = "";
     }
 })
