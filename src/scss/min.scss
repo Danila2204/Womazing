@@ -7,6 +7,20 @@ $button-color: rgb(241, 246, 246);
 $price_color: rgb(153, 142, 120);
 $old_price_color: rgb(156, 156, 156);
 $footer-color: #f1eadc;
+
+// === screens ===
+$xs-max-width: 575px;
+$sm-max-width: 767px;
+$md-max-width: 991px;
+$lg-max-width: 1199px;
+$xl-max-width: 1399px;
+
+$sm-min-width: 576px;
+$md-min-width: 768px;
+$lg-min-width: 992px;
+$xl-min-width: 1200px;
+$xxl-min-width: 1400px;
+// === / screens ===
 // === / variables ===
 // === imports ===
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
@@ -29,10 +43,10 @@ $footer-color: #f1eadc;
 // === / mxixins ===
 // === normalize ===
 body {
+    max-width: 1600px;
     position: relative;
     margin: 0;
     box-sizing: border-box;
-    width: 1600px;
 }
 
 * {
@@ -85,7 +99,7 @@ body {
 // === / global ===
 // === header ===
 .header {
-    width: 1600px;
+    max-width: 1600px;
     display: flex;
     justify-content: center;
     margin: 0 0 250px;
@@ -125,8 +139,8 @@ body {
 }
 
 .nav_header {
-    width: 1600px;
-    height: 120px;
+    max-width: 1600px;
+    min-height: 120px;
     position: sticky;
     top: 0;
     margin: 0;
@@ -136,7 +150,7 @@ body {
 }
 
 .container_header {
-    width: 100%;
+    max-width: 100%;
 }
 
 .link_header {
@@ -156,6 +170,7 @@ body {
 }
 
 .button {
+
     &-arrow {
         width: 67px;
         height: 100%;
@@ -253,6 +268,7 @@ body {
 }
 
 .condition__img {
+
     &:not(:last-child) {
         margin-right: 12px;
     }
