@@ -25,24 +25,30 @@ body {
 }
 
 .kinds__button {
+  display: none;
+}
+.kinds__button_fake {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   transition: 0.5s;
   animation: ease;
   padding: 19px 65px;
+  margin: 0 10px 0 0;
   font-size: 17px;
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
 }
-.kinds__button:hover {
+.kinds__button_fake-last {
+  margin: 0;
+}
+.kinds__button_fake:hover {
   cursor: pointer;
+}
+.kinds__button:checked + .kinds__button_fake {
   background-color: #000;
   color: #fff;
   border: none;
-}
-.kinds__button:not(:last-child) {
-  margin: 0 10px 0 0;
 }
 
 .title {
