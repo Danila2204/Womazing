@@ -2,7 +2,7 @@ import * as nodePath from "path";
 
 const baseDir = nodePath.basename(nodePath.resolve());
 
-const result = "./dist";
+const result = "./docs";
 const src = "./src"
 
 export const path = {
@@ -24,6 +24,5 @@ export const path = {
         scss: `${src}/scss/**/*.scss`,
         javascript: `${src}/scripts/**/*.js`
     },
-    clean: result,
     ftp: ``
 }

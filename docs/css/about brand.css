@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+.header {
+  margin: 0 0 142px;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.about-brand {
+  display: flex;
+  justify-content: center;
+}
+.about-brand__info {
+  margin: 0 0 214px;
+}
+.about-brand__history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-brand__button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  width: 260px;
+  height: 68px;
+  transition: 0.5s;
+  animation: ease;
+  margin: 130px 0 0;
+  font-size: 17px;
+  border: none;
+  background-color: #6e9c9f;
+  color: #fff;
+}
+.about-brand__button:hover {
+  cursor: pointer;
+  background-color: rgb(80, 148, 152);
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 55px;
+  margin: 0;
+}
+
+.nav-page {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  height: 120px;
+  font-size: 17px;
+}
+.nav-page__past {
+  margin: 0;
+}
+.nav-page__present {
+  color: rgb(144, 144, 144);
+}
+
+.idea {
+  display: flex;
+}
+.idea__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 0 0 94px;
+}
+.idea__title {
+  margin: 0 0 46px;
+  font-size: 25px;
+}
+.idea__description {
+  margin: 0;
+  font-size: 17px;
+}
+
+.magic {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 130px 0 0;
+}
+.magic__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 123px 0 0;
+}
+.magic__title {
+  margin: 0 0 46px 0;
+  font-size: 25px;
+}
+.magic__description {
+  font-size: 17px;
+}

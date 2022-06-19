@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  margin: 0;
+}
+
+.store {
+  display: flex;
+  justify-content: center;
+  margin: 142px 0 0;
+}
+.store__info {
+  display: flex;
+  flex-direction: column;
+}
+.store__kinds {
+  display: flex;
+}
+
+.kinds__button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  transition: 0.5s;
+  animation: ease;
+  padding: 19px 65px;
+  font-size: 17px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+.kinds__button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.kinds__button:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  font-size: 55px;
+}
+
+.nav {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.nav__present {
+  color: rgb(128, 128, 128);
+}
+
+.quantity {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(128, 128, 128);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product:not(:last-child) {
+  margin: 0 30px 0 0;
+}
+.product__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin: 24px 0 7px;
+  font-size: 20px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+.products__section {
+  display: flex;
+}
+
+.price {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin: 0 0 50px;
+  font-size: 15px;
+  color: rgb(153, 142, 120);
+}
+.price_old {
+  margin: 0 10px 0 0;
+  text-decoration: line-through;
+  color: rgb(156, 156, 156);
+}
+
+.prices {
+  display: flex;
+}
+
+.collection {
+  display: flex;
+}
+.collection_img {
+  width: 350px;
+  height: 478px;
+  transition: 0.5s;
+  margin: 0;
+}
+.collection_img_1 {
+  background-image: url(../imports/img/image-1.png);
+}
+.collection_img_2 {
+  background-image: url(../imports/img/image-5.png);
+}
+.collection_img_3 {
+  background-image: url(../imports/img/image-6.png);
+}
+.collection_img-overlay {
+  transition: 0.5s;
+  animation: ease;
+}
