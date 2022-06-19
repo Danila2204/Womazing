@@ -126,13 +126,12 @@ body {
 
 .nav_header {
     width: 1600px;
-    height: 120px;
+    min-height: 120px;
     position: sticky;
     top: 0;
     margin: 0;
     padding: 0 246px;
     z-index: 2;
-    background-color: #fff;
 }
 
 .container_header {
