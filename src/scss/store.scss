@@ -57,25 +57,33 @@ body {
 }
 
 .kinds__button {
-    @include Raleway-Medium();
+    display: none;
 
-    transition: .5s;
-    animation: ease;
-    padding: 19px 65px;
-    font-size: 17px;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+    &_fake {
+        @include Raleway-Medium();
+    
+        transition: .5s;
+        animation: ease;
+        padding: 19px 65px;
+        margin: 0 10px 0 0;
+        font-size: 17px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
 
-    &:hover {
-        cursor: pointer;
+        &-last {
+            margin: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    &:checked + &_fake {
         background-color: #000;
         color: #fff;
         border: none;
-    }
-
-    &:not(:last-child) {
-        margin: 0 10px 0 0;
     }
 }
 
