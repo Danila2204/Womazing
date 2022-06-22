@@ -3,7 +3,6 @@ const overlay = document.querySelectorAll(".collection_img-overlay");
 const frontGround = document.querySelectorAll(".overlay-frontground");
 const path = "../imports/img/background_arrow.svg"
 
-console.log(backGround, frontGround, overlay);
 
 for (let i = 0; i < backGround.length; i++) {
     backGround[i].addEventListener("mousemove", () => {

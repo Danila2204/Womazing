@@ -29,10 +29,10 @@ $footer-color: #f1eadc;
 // === / mxixins ===
 // === normalize ===
 body {
+    width: 1600px;
     position: relative;
     margin: 0;
     box-sizing: border-box;
-    width: 1600px;
 }
 
 * {
@@ -85,7 +85,7 @@ body {
 // === / global ===
 // === header ===
 .header {
-    width: 1600px;
+    max-width: 1600px;
     display: flex;
     justify-content: center;
     margin: 0 0 250px;
@@ -125,12 +125,11 @@ body {
 }
 
 .nav_header {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 120px;
     position: sticky;
     top: 0;
     margin: 0;
-    padding: 0 246px;
     z-index: 2;
 }
 
@@ -224,21 +223,21 @@ body {
 
 .gallery__img {
     &_1 {
-        position: absolute;
+        width: 434px;
+        height: 652px;
         top: 120px;
-        left: 945px;
     }
     
     &_2 {
-        position: absolute;
+        width: 190px;
+        height: 318px;
         top: 508px;
-        left: 815px;
     }
     
     &_3 {
-        position: absolute;
+        width: 197px;
+        height: 197px;
         top: 243px;
-        left: 1263px;
     }
 
     &_fon {
