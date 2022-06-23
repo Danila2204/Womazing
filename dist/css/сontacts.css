@@ -126,6 +126,10 @@ body {
 .form__message {
   height: 134px;
   width: 443px;
+<<<<<<< HEAD
+=======
+  resize: none;
+>>>>>>> fix
   vertical-align: top;
   font-size: 17px;
   border: none;

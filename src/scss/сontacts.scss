@@ -171,7 +171,7 @@ body {
     &__message {
         height: 134px;
         width: 443px;
-        // FIXME:
+        resize: none;
         vertical-align: top;
         font-size: 17px;
         border: none;
