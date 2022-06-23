@@ -139,6 +139,9 @@ body {
 .colors__radio-button_fake {
   width: 41px;
   height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px;
 }
 .colors__radio-button_fake:hover {
