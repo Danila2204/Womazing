@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 body {
+<<<<<<< HEAD
   max-width: 1600px;
+=======
+  width: 1600px;
+>>>>>>> main
   position: relative;
   margin: 0;
   box-sizing: border-box;
@@ -95,9 +99,7 @@ body {
   position: sticky;
   top: 0;
   margin: 0;
-  padding: 0 246px;
   z-index: 2;
-  background-color: #fff;
 }
 
 .container_header {
@@ -180,19 +182,20 @@ body {
 }
 
 .gallery__img_1 {
-  position: absolute;
-  top: 120px;
-  left: 945px;
+  width: 190px;
+  height: 318px;
+  top: 508px;
+  z-index: 1;
 }
 .gallery__img_2 {
-  position: absolute;
-  top: 508px;
-  left: 815px;
+  width: 434px;
+  height: 652px;
+  top: 120px;
 }
 .gallery__img_3 {
-  position: absolute;
+  width: 197px;
+  height: 197px;
   top: 243px;
-  left: 1263px;
 }
 .gallery__img_fon {
   position: relative;
