@@ -223,15 +223,16 @@ body {
 
 .gallery__img {
     &_1 {
-        width: 434px;
-        height: 652px;
-        top: 120px;
-    }
-    
-    &_2 {
         width: 190px;
         height: 318px;
         top: 508px;
+        z-index: 1;
+    }
+    
+    &_2 {
+        width: 434px;
+        height: 652px;
+        top: 120px;
     }
     
     &_3 {

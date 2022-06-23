@@ -178,14 +178,15 @@ body {
 }
 
 .gallery__img_1 {
-  width: 434px;
-  height: 652px;
-  top: 120px;
-}
-.gallery__img_2 {
   width: 190px;
   height: 318px;
   top: 508px;
+  z-index: 1;
+}
+.gallery__img_2 {
+  width: 434px;
+  height: 652px;
+  top: 120px;
 }
 .gallery__img_3 {
   width: 197px;
