@@ -193,6 +193,9 @@ body {
     &_fake {
         width: 41px;
         height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 100px;
 
         &:hover {
